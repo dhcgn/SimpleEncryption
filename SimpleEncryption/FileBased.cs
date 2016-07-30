@@ -123,7 +123,7 @@ namespace SimpleEncryption
 #if DEBUG
         private const int Iterations = 1000;
 #else
-        private const int Iterations = 1000000;
+        private const int Iterations = 100000; // around 5s on an i7
 #endif
 
         private static readonly byte[] Salt = Guid.Parse("{28BF78E1-D011-4AA1-B046-500F19DF5139}").ToByteArray();
